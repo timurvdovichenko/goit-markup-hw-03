@@ -69,13 +69,13 @@ a {
   padding-bottom: 0; */
   border-bottom: #ececec 1px solid;
 }
-.buttons-header,
 .portfolio-header {
   display: none;
 }
 /* no dots on li, margin 0, padding 0 */
 .contacts,
-.list {
+.list,
+.list-buttons {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -348,19 +348,19 @@ a {
 /* Section Buttons */
 
 /* ********************************************** */
-/* .section-buttons .list {
+.list-buttons {
   display: flex;
   justify-content: center;
-} */
+}
 
 /* .section-buttons .container,
 .portfolio .container {
   padding: 0;
 } */
-.section-buttons .item:not(:last-child) {
+.list-buttons .item-button:not(:last-child) {
   margin-right: 8px;
 }
-.section-buttons .btn {
+.list-buttons .btn {
   border-style: none;
   border-radius: var(--button-border-radius);
   padding-top: 6px;
@@ -378,8 +378,8 @@ a {
   text-align: center;
   line-height: 1.63;
 }
-.section-buttons .btn:hover,
-.section-buttons .btn:focus {
+.list-buttons .btn:hover,
+.list-buttons .btn:focus {
   display: block;
   border-style: none;
   border-radius: var(--button-border-radius);
@@ -411,17 +411,17 @@ a {
 }
 .portfolio-img {
   display: block;
-  /* margin-bottom: 20px; */
 }
 .portfolio-card {
   width: calc(100%-2px);
   border-left: #eeeeee 1px solid;
   border-right: #eeeeee 1px solid;
   border-bottom: #eeeeee 1px solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 .portfolio-header-list {
-  padding-top: 20px;
-  padding-left: 24px;
   margin-bottom: 4px;
 
   color: var(--portfolio-h-text-color);
@@ -430,14 +430,11 @@ a {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 2;
-  /* background-color: teal; */
 }
 .portfolio-paragraph-list {
-  padding-left: 24px;
-  padding-bottom: 20px;
   color: var(--portfolio-text-color);
+
   font-size: 16px;
-  /* letter-spacing: 0.03em; */
   line-height: 1.88;
 }
 .portfolio a {
